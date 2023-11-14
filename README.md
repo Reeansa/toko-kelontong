@@ -44,6 +44,22 @@ Pak Ipul merupakan pemilik toko klontong yang menjual berbagai barang, saat ini 
     ```
     php artisan serve
     ```
+## Akun untuk Login
+1. admin
+   ```
+   Email : admin@gmail.com
+   Password : admin123
+   ```
+2. user
+   ```
+   Email : user@gmail.com
+   Password : user123
+   ```
+3. user non-aktif
+   ```
+   Email : nonaktif@gmail.com
+   Password : nonaktif123
+   ```
 ## Tambahan
 dalam project ini sudah terdapat CRUD sesuai dengan studi kasus yang disediakan namun terdapat beberapa tambahan, diantaranya: 
 1. terdapat login page
