@@ -27,6 +27,13 @@ class DatabaseSeeder extends Seeder
                 'role'     => 'user',
                 'password' => 'user123',
             ],
+            [ 
+                'name'     => 'tes akun nonaktif',
+                'email'    => 'nonaktif@gmail.com',
+                'role'     => 'user',
+                'status'   => 'non-active',
+                'password' => 'nonaktif123',
+            ],
         ] );
         $this->call( BarangSeeder::class);
 
