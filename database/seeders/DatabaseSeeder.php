@@ -14,8 +14,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(50)->create();
-        $this->call(BarangSeeder::class);
+        User::factory()->createMany( [ 
+            [ 
+                'name'     => 'tes admin',
+                'email'    => 'admin@gmail.com',
+                'role'     => 'admin',
+                'password' => 'admin123',
+            ],
+            [ 
+                'name'     => 'tes user',
+                'email'    => 'user@gmail.com',
+                'role'     => 'user',
+                'password' => 'user123',
+            ],
+        ] );
+        $this->call( BarangSeeder::class);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
