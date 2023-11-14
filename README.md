@@ -1,11 +1,49 @@
 # FINAL PROJECT INCUBIX | RAIHAN FEBRIYANSAH
-## Studi Kasus (selesai)
+## Studi Kasus
 Pak Ipul merupakan pemilik toko klontong yang menjual berbagai barang, saat ini Pak Ipul sedang kesusahan dalam pendataan barang karena masih menggunakan pembukuan, yang mana cara tersebut masih sangat tradisional. Oleh karena itu Pak Ipul ingin memiliki sebuah website pendataan barang, agar lebih memudahkan Pak Ipul dalam melakukan pendataan barang di toko klontongnya. Buatlah website pendataan data barang untuk toko Pak Ipul, dengan fitur sebagai berikut:
 1. Memasukan data barang
 2. Menghapus data barang
 3. Melihat data barang
 4. Mengupdate data barang
 
+## Setting dengan Git
+1. buat .env terlebih dahulu dikarenakan saat clone .env tidak ada
+   ```
+   cp .env.example .env
+   ```
+2. pada .env bagian `DB_DATABASE` sesuaikan dengan nama database yang di inginkan
+3. lalu generate app_key
+   ```
+   php artisan key:generate
+   ```
+4. Install dependensi JavaScript menggunakan npm
+   ```
+   npm install
+   ```
+   atau yarn
+   ```
+    yarn install
+   ```
+5. Install dependensi PHP menggunakan Composer
+   ```
+   composer install
+   ```
+6. migrate database terlebih dahulu
+   ```
+   php artisan migrate:fresh
+   ```
+7. jika ingin menggunakan seeder (dengan data dummy) lakukan/jalankan perintah
+   ```
+   php artisan db:seed
+   ```
+8. jalankan vite untuk tailwind css
+   ```
+   npm run dev
+   ```
+9. jalankan laravel
+    ```
+    php artisan serve
+    ```
 ## Tambahan
 dalam project ini sudah terdapat CRUD sesuai dengan studi kasus yang disediakan namun terdapat beberapa tambahan, diantaranya: 
 1. terdapat login page
