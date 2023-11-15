@@ -40,7 +40,11 @@ Pak Ipul merupakan pemilik toko klontong yang menjual berbagai barang, saat ini 
    ```
    npm run dev
    ```
-9. jalankan laravel
+   agar lebih mudah langsung di build saja
+   ```
+   npm run build
+   ```
+10. jalankan laravel
     ```
     php artisan serve
     ```
